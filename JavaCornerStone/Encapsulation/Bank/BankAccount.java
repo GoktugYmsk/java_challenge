@@ -1,4 +1,4 @@
-package JavaCornerStone.Encapsulation;
+package JavaCornerStone.Encapsulation.Bank;
 
 public class BankAccount {
     private double balance;
