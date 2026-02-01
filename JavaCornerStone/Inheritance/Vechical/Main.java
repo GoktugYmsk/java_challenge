@@ -15,7 +15,6 @@ public class Main {
         // Vehicle deneme = new Vehicle();
         // deneme.writeMessage();
 
-
         mysteryVehicle.start();
 
         System.out.println("Kontrol kodu");
