@@ -8,9 +8,10 @@ public class Main {
     public static void main(String[] args) {
         HomeHub myHome = new HomeHub();
 
-        //myHome.addDevice(new Light("Salon Lambası"));
-        //myHome.addDevice(new Thermostat("Termostat"));
-        //myHome.addDevice(new Light("Mutfak Lambası"));
+        myHome.addDevice(new Light("Salon Lambası"));
+        myHome.addDevice(new Thermostat("Termostat"));
+        myHome.addDevice(new Light("Mutfak Lambası"));
+
 
         Television masterTV = new Television("Tüm Ev TV Sistemi");
 
@@ -20,7 +21,6 @@ public class Main {
         masterTV.addSubTV(new KidsRoomTV("Çocuk Odası TV"));
 
         myHome.addDevice(masterTV);
-
 
         myHome.activateAll();
 

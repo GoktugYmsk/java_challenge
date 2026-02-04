@@ -33,7 +33,6 @@ public class Television extends SmartDevice {
 
 
 }
-// Television.java dosyanın içinde veya Main'in altında şunlar olmalı:
 
 class LivingRoomTV extends Television {
     public LivingRoomTV(String name) { super(name); }
