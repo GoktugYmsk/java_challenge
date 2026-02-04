@@ -14,6 +14,20 @@ public class Television extends SmartDevice {
         subTVs.add(tv);
     }
 
+    public void activeTV(){
+        System.out.println("Sadece televizyonlar açılıyor");
+        for(Television gktControl : subTVs){
+            gktControl.turnOn();
+            gktControl.performAction();
+        }
+    }
+
+    public void closeTv(){
+        for(Television gktControl : subTVs){
+            gktControl.turnOff();
+        }
+    }
+
     @Override
     public void performAction() {
         if (isOn) {

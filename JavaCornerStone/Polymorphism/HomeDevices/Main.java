@@ -22,7 +22,12 @@ public class Main {
 
         myHome.addDevice(masterTV);
 
-        myHome.activateAll();
+
+
+        System.out.println("Burada sadece televizyonlar gelmeli");
+        masterTV.activeTV();
+
+        // myHome.activateAll();
 
         // Zamanlayıcı
         ScheduledExecutorService timer = Executors.newSingleThreadScheduledExecutor();
@@ -32,7 +37,8 @@ public class Main {
         }, 2, TimeUnit.SECONDS);
 
         timer.schedule(() -> {
-            myHome.closeAll();
+            // myHome.closeAll();
+            masterTV.closeTv();
             timer.shutdown();
         }, 5, TimeUnit.SECONDS);
     }
